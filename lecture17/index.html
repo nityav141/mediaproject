@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+           margin:10px;
+        }
+        div{
+            border: 3px solid black;
+        }
+        .img2{
+        
+             /* position: relative;
+             top:100px;
+             left:100px */
+             /* position:absolute;
+             top:100px;
+              */
+        }
+        .container{
+            position:relative;
+            height:8000px;
+            background-color: beige;
+        }
+        .img4{
+            /* FIXED */
+            position:fixed;
+
+        }
+        .img3{
+            /* STICKY */
+            position:sticky;
+            top:100px;
+        }
+        .box{
+            background-color: aqua;
+            height:500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="pic3.jpg" alt="nitya" width="300px" height="200px" class="img1"/>
+        <img src="pic3.jpeg" alt="nitya" width="150px" height="300px"class="img2"/>
+        <img src="picture1.jpeg" alt="nitya" width="150px" height="300px"class="img3"/>
+        <img src="picture2.jpg" alt="nitya" width="300px" height="200px"class="img4"/>
+    </div>
+    <div class="box"></div>
+    
+</body>
+</html>

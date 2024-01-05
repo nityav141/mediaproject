@@ -1,0 +1,46 @@
+
+.box1{
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    border: 3px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* margin: auto; */
+
+    transition: all 3s linear 1s;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box1:hover{
+    /* transform: rotate(360deg); */
+    /* transition: all 3s linear 1s; */
+    /* transform: scale(2);size increase */
+    /* transform: scale(0.5); sized decrease */
+
+    /* transform: rotate(-45deg) ; rotate anticlockwise */
+
+    /* transform: skewY(28deg);//tilt right */
+     /* transform: skewX(28deg);//tilt left */
+
+     transform: translate(500px,450px);
+    
+
+
+
+}
+
+p{
+    font-size: 190%;
+}

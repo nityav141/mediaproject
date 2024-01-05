@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- SHADOW->>BY DEFAULT SHADOW'S COLOR IS BLACK -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+
+        :root{
+             /* CREATING CUSTOM VARIABLES */
+             --primary-color:brown; 
+             --custom-width:330px;
+        }
+
+
+
+
+
+
+
+
+
+        .container{
+            background-color: bisque;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            /* CREATING CUSTOM VARIABLES */
+            /* --primary-color:brown; */
+            /* --custom-width:330px; */
+
+
+
+            background-color: aqua;
+            width: var(--custom-width);
+            /* width: 330px; */
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding:5px;
+
+            /* SHADOW (x,y,color)*/
+            /* box-shadow: (-10->right) 10px 15px brown; */
+
+
+            /* BLUR (x,y,blur-radius,color)*/
+            /* box-shadow: 10px 15px 5px brown; */
+        
+
+            /*SPREAD RADIUS (x,y,blur-radius,spread radius,color)  */
+              /* box-shadow: 10px 15px 5px 28px brown; */
+
+
+              /* SHADOW INSET/INSIDE */
+              /* box-shadow: inset 10px 15px brown; */
+
+
+              /* MULTIPLE SHADOWS */
+              box-shadow: 10px 15px red,15px 20px green;
+
+        }
+
+
+        #head1{
+           
+             /* text-shadow: 12px 13px 3px pink; */
+             /* text-shadow: yellow 12px 13px 2px; */
+             /* text-shadow: white 12px 13px ; */
+             text-shadow: 12px 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="pic3.jpeg" height=150/>
+            <h2 id="head1">Welcome!!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi rerum tempora explicabo magni aspernatur reiciendis consequuntur dolorem fuga, atque debitis optio vero vitae voluptatem eos dignissimos! Corrupti nostrum asperiores maiores.</p>
+
+        </div>
+    </div>
+</body>
+</html>

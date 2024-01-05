@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            /* box sizing ---border box helps avoiding any changes to the box but shrinks content */
+            box-sizing: border-box;
+        }
+        .box{
+            /*  custom height and width is respected*/
+            width:300px;
+            height:300px;
+            /*  custom margin and padding is respected*/
+            border:1px solid black;
+            padding:20px;
+             /* to convert block element into inline element */
+             /* display:inline; */
+             display: inline-block;
+        }
+        span{
+            border: 6px solid green;
+            /*  custom height and width is not respected*/
+            width:300px;
+            height:300px;
+             /*  custom margin  is respected only in horizontal direction */
+            margin:25px;
+            /* padding is respected  */
+            padding:50px; 
+            /* to convert inline element into block element */
+             /* display:block; */
+       
+        }    
+        /* div{
+            border: 1px solid red;
+            width:300px;
+            height:300px;
+            margin:25px;
+            padding:50px; 
+
+        }*/
+    </style>
+</head>
+<body>
+    <!-- <div>
+        Welcome to mahh world!!
+    </div>
+    <div>
+        Welcome to mahh World 2.0!!
+    </div> -->
+    <!-- <div class="box">
+        Welcome to mahh world!!
+    </div> -->
+    <span>this is nitya</span>
+    <span>this nitya 2.0</span>
+
+</body>
+</html>
